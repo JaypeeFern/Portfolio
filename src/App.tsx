@@ -1,11 +1,9 @@
 // Libraries
 import { RouterProvider, createRoutesFromElements, createBrowserRouter, Route } from "react-router-dom"
-// Components
-
 // Layouts
 import IndexLayout from './layouts/IndexLayout'
 // Pages
-import Homepage from "./pages/homepage"
+import Homepage from "./pages/Homepage"
 
 function App() {
 
