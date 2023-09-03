@@ -7,6 +7,9 @@ export default {
     move: {
       speed: 1,
     },
+    color: {
+      value: ''
+    }
   },
   opacity: {
     animation: {
