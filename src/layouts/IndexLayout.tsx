@@ -6,7 +6,6 @@ import BackgroundParticles from '@/components/Particles'
 // import { ScrollArea } from '@/components/ui/scroll-area'
 
 export default function IndexLayout() {
-    console.log('Rendered')
     return (
         <>
             <div className='main-container h-screen flex flex-col md:flex-row'>
@@ -14,7 +13,7 @@ export default function IndexLayout() {
                     <SideNavigation />
                 </div>
                 <BackgroundParticles />
-                <div className='content-container w-screen bg-gray-800/30 overflow-auto p-6'>
+                <div className='content-container w-screen bg-gray-800/30 overflow-auto p-6 border-l-2 border-l-gray-300/10'>
                     <Outlet />
                 </div>
             </div>
