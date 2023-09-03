@@ -1,5 +1,7 @@
 // Libraries
 import { RouterProvider, createRoutesFromElements, createBrowserRouter, Route } from "react-router-dom"
+// Components
+
 // Layouts
 import IndexLayout from './layouts/IndexLayout'
 // Pages
@@ -11,13 +13,17 @@ function App() {
     createRoutesFromElements(
       <Route path='/'>
         <Route element={<IndexLayout />}>
-            <Route index element={<Homepage/>}/>
+          <Route index element={<Homepage />} />
         </Route>
       </Route>
     )
   )
 
-  return <RouterProvider router={router}/>
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  )
 }
 
 export default App
