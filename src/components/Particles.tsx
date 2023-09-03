@@ -25,7 +25,7 @@ export default function BackgroundParticles() {
     const darkThemeColor = '#ffffff'; // White for dark theme
 
     // Use state to track the current particle color
-    const [particleColor, setParticleColor] = React.useState(lightThemeColor);
+    const [particleColor, setParticleColor] = React.useState<any>();
 
     // Use useEffect to update the particle color when the theme changes
     React.useEffect(() => {
@@ -36,7 +36,6 @@ export default function BackgroundParticles() {
         }
     }, [theme]);
 
-    // Create a copy of the original config and set the particle color
     options.particles.color.value = particleColor;
 
     return (
