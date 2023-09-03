@@ -2,13 +2,13 @@ import { Github, Linkedin } from 'lucide-react'
 import DarkModeButtons from "./DarkModeButton"
 import { Button } from "./ui/button"
 
-export default function SideNav() {
+export default function SideNavigation() {
     return (
         <>
             <div className="theme-buttons-container flex justify-center">
                 <DarkModeButtons />
             </div>
-            <div className="pages-container w-32 flex flex-col justify-center">
+            <div className="pages-container w-32 flex flex-col justify-center min-[320px]:me-auto">
                 <Button variant='ghost' className="hover:bg-gray-400 hover:dark:bg-gray-500 dar transition-colors duration-200 ease-in-out rounded-none">Home</Button>
             </div>
             <div className="socials-container flex justify-center gap-3">
