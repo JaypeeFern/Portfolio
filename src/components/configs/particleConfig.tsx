@@ -14,7 +14,7 @@ export default {
   opacity: {
     animation: {
       enable: true,
-      speed: 0.05,
+      speed: 0.03,
       sync: true,
       startValue: "max",
       count: 1,
