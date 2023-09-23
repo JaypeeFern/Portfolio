@@ -2,7 +2,7 @@ import React from 'react'
 import Particles from "react-particles";
 import type { Engine } from "tsparticles-engine";
 import { loadStarsPreset } from "tsparticles-preset-stars";
-import { useTheme } from './ThemeProvider';
+import { useTheme } from '../contexts/ThemeProvider';
 import options from './configs/particleConfig'
 
 // Problem: UI not updating but the value in the config was changed 

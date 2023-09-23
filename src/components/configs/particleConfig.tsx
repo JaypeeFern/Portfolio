@@ -5,7 +5,7 @@ export default {
   },
   particles: {
     move: {
-      speed: 1,
+      speed: 0.5,
     },
     color: {
       value: ''

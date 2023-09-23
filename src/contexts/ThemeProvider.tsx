@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react"
+import { createContext, useContext, useState, useCallback } from "react"
 
 type Theme = 'dark' | 'light' | 'system'
 
@@ -25,7 +25,7 @@ export function ThemeProvider({ children, defaultTheme = 'system', storageKey = 
         () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
     )
 
-    useEffect(() => {
+    const changeTheme = useCallback(() => {
         const root = window.document.documentElement
 
         root.classList.remove('light', 'dark')
@@ -37,6 +37,8 @@ export function ThemeProvider({ children, defaultTheme = 'system', storageKey = 
 
         root.classList.add(theme)
     }, [theme])
+
+    changeTheme()
 
     const value = {
         theme,
