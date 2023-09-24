@@ -16,9 +16,6 @@ export default function Homepage() {
                     </Button>
                 </motion.div>
             </div >
-            <div id="project-section" className="projects-container h-full flex" >
-                <span>Projects</span>
-            </div>
         </>
     )
 }

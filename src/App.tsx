@@ -6,6 +6,7 @@ import { RouterProvider, createRoutesFromElements, createBrowserRouter, Route } 
 import IndexLayout from './layouts/IndexLayout';
 // Pages
 import Homepage from "./pages/Homepage";
+import Projects from "./pages/Projects";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Route path='/'>
         <Route element={<IndexLayout />}>
           <Route index element={<Homepage />} />
+          <Route path="projects" element={<Projects />} />
         </Route>
       </Route>
     )
