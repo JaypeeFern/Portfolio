@@ -37,7 +37,7 @@ export default function Projects() {
 
     return (
         <main className='projects-container flex h-full p-4 gap-10'>
-            <div className='grid grid-cols-3 gap-3'>
+            <div className='grid md:grid-cols-3 gap-3'>
                 {projects.map((project, index) => (
                     <Card key={index}>
                         <CardHeader className='max-h-[170px]'>

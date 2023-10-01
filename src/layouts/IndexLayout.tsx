@@ -14,7 +14,7 @@ export default function IndexLayout() {
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.8 }} transition={{ duration: 2.5, delay: 1 }}>
                     <BackgroundParticles />
                 </motion.div>
-                <ScrollArea className="content-container w-screen bg-gray-800/30  p-6 border-l-2 border-l-gray-300/10">
+                <ScrollArea className="content-container h-full w-screen bg-gray-800/30  p-6 border-l-2 border-l-gray-300/10">
                     <Outlet />
                 </ScrollArea>
             </div>

@@ -11,11 +11,10 @@ export default function SideNavigation() {
 
     return (
         <>
-            <div className="theme-buttons-container flex justify-center">
+            <div className="theme-buttons-container flex justify-center me-6 md:me-0">
                 <ChangeThemeButton />
             </div>
-            <div className="pages-container w-32 flex flex-col justify-center min-[320px]:me-auto">
-
+            <div className="pages-container w-32 flex md:flex-col justify-center min-[320px]:me-auto">
                 <NavLink to='/' className={({ isActive }) => isPageActive(isActive)}>
                     <Button
                         variant='ghost'
